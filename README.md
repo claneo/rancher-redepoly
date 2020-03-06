@@ -13,7 +13,7 @@ docker run --rm \
   -e ENDPOINT=YOUR_RANCHER_ENDPOINT \
   -e TOKEN=YOUR_TOKEN \
   -e CLUSTER=YOUR_CLUSTER_NAME \
-  PROJECT NAMESPACE DEPLOYMENT
+  /rancher-redeploy.sh PROJECT NAMESPACE DEPLOYMENT
 ```
 
 ### Build your own image
@@ -29,7 +29,7 @@ ENV CLUSTER=YOUR_CLUSTER_NAME
 
 Usage:
 
-`docker run --rm YOUR_IMAGE PROJECT NAMESPACE DEPLOYMENT`
+`docker run --rm YOUR_IMAGE /rancher-redeploy.sh PROJECT NAMESPACE DEPLOYMENT`
 
 ### Gitlab CI example
 
